@@ -3,9 +3,9 @@ namespace Vistag\EloquentUuid;
 
 use Ramsey\Uuid\Uuid;
 
-trait HasUuid4
+trait HasUuid1
 {
-    public static function bootHasUuid4()
+    public static function bootHasUuid1()
     {
         static::creating(function ($model) {
             $model->id = Uuid::uuid1()->toString();
