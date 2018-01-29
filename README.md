@@ -14,7 +14,7 @@ You can install this package via composer using this command:
 
 ### Models
 
-To set up a model to use UUID, simply use the HasUuid1 or HasUuid4 trait.
+To set up a model to use UUID, simply use HasUuid1 or HasUuid4 trait.
 
 #### UUID1 Example
 ``` php
