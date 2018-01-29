@@ -1,0 +1,42 @@
+{
+    "name": "vistag/eloquent-uuid",
+    "description": "Eloquent models UUID traits",
+    "type": "library",
+    "keywords": ["laravel", "eloquent", "trait", "uuid", "identifier", "guid"],
+    "homepage": "https://github.com/VistagGit/eloquent-uuid",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pavel Rorecek",
+            "email": "pavel@rorecek.com",
+            "homepage": "https://laravelist.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/VistagGit/eloquent-uuid/issues",
+        "source": "https://github.com/VistagGit/eloquent-uuid"
+    },
+    "require": {
+        "php": "^5.4 || ^7.0",
+        "ramsey/uuid": "^3.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.7|^5.0",
+        "jakub-onderka/php-parallel-lint": "^0.9.0"
+    },
+    "autoload": {
+        "psr-4": {"Vistag\\EloquentUuid\\": "src/"}
+    },
+    "autoload-dev": {
+        "psr-4": {"Vistag\\EloquentUuid\\Test\\": "tests/"}
+    },
+    "scripts": {
+        "lint": "parallel-lint src tests",
+        "phpunit": "phpunit --verbose --colors=always",
+        "test": [
+            "@lint",
+            "@phpunit"
+        ]
+    },
+    "minimum-stability": "dev"
+}
