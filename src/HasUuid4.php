@@ -8,7 +8,9 @@ trait HasUuid4
     public static function bootHasUuid4()
     {
         static::creating(function ($model) {
-            $model->id = Uuid::uuid4()->toString();
+            if (empty($model->id)) {
+                $model->id = Uuid::uuid4()->toString();    
+            }
         });
     }
 
